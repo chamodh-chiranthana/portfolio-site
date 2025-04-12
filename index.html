@@ -27,6 +27,7 @@
     />
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
     <style>
       .right-content {
         display: flex;
@@ -72,6 +73,71 @@
         color: #232323;
       }
 
+      /* Contact form styling */
+      .fifth-content {
+        padding: 60px 0;
+      }
+
+      .fifth-content .section-title {
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      #contact {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      #contact fieldset {
+        margin-bottom: 20px;
+      }
+
+      #contact input,
+      #contact textarea {
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        background-color: transparent;
+        color: #fff;
+        border-radius: 10px;
+        padding: 14px 20px;
+        transition: all 0.3s;
+        width: 100%;
+      }
+
+      #contact input:focus,
+      #contact textarea:focus {
+        border-color: #fff;
+        outline: none;
+      }
+
+      #form-submit {
+        background-color: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 15px;
+        padding: 10px 30px;
+        display: inline-block;
+        border-radius: 10px;
+        font-weight: 500;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      #form-submit:hover {
+        background-color: #fff;
+        color: #232323;
+      }
+
+      .col-md-12.text-center {
+        text-align: center;
+      }
+
+      /* Contact form field layout fix */
+      #contact .row .col-md-6 {
+        width: 100%;
+        float: none;
+      }
+
       /* Additional responsive styles */
       @media (max-width: 768px) {
         .right-content {
@@ -90,6 +156,14 @@
         .d-flex {
           display: block !important;
           margin-bottom: 10px;
+        }
+
+        #contact {
+          padding: 10px;
+        }
+
+        .fifth-content {
+          padding: 40px 0;
         }
       }
     </style>
@@ -129,9 +203,6 @@
     </div>
 
     <nav>
-      <div class="logo">
-        <img src="img/logo.png" alt="" />
-      </div>
       <!-- Remove mini-logo div -->
       <ul>
         <li>
@@ -488,16 +559,15 @@
                           road infrastructure issues.
                         </p>
                         <div class="project-buttons">
-                          <a href="#" class="project-button">Live Demo</a>
-                          <a
-                            href="https://github.com/project-infratrack"
-                            class="project-button"
-                            >Repository</a
-                          >
                           <a
                             href="https://infratrack.it.com"
                             class="project-button"
                             >Landing Page</a
+                          >
+                          <a
+                            href="https://github.com/project-infratrack"
+                            class="project-button"
+                            >Repository</a
                           >
                         </div>
                       </div>
@@ -521,7 +591,11 @@
                           A flash card study assistance application.
                         </p>
                         <div class="project-buttons">
-                          <a href="#" class="project-button">Live Demo</a>
+                          <a
+                            href="https://flash-cardi.vercel.app/"
+                            class="project-button"
+                            >Live Demo</a
+                          >
                           <a
                             href="https://github.com/chamodh-chiranthana/flash-cardi"
                             class="project-button"
@@ -572,7 +646,26 @@
           <div class="container-fluid">
             <div class="col-md-12">
               <h2 class="section-title">Get In Touch</h2>
-              <form id="contact" action="" method="post">
+              <form
+                id="contact"
+                action="https://api.web3forms.com/submit"
+                method="POST"
+              >
+                <!-- Replace with your Access Key -->
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="53af09cd-deaf-4e02-a204-32ccdacee9c4"
+                />
+
+                <!-- Honeypot Spam Protection -->
+                <input
+                  type="checkbox"
+                  name="botcheck"
+                  class="hidden"
+                  style="display: none"
+                />
+
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
@@ -582,7 +675,7 @@
                         class="form-control"
                         id="name"
                         placeholder="Your name..."
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -594,19 +687,7 @@
                         class="form-control"
                         id="email"
                         placeholder="Your email..."
-                        required=""
-                      />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <input
-                        name="subject"
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        placeholder="Subject..."
-                        required=""
+                        required
                       />
                     </fieldset>
                   </div>
@@ -618,11 +699,11 @@
                         class="form-control"
                         id="message"
                         placeholder="Your message..."
-                        required=""
+                        required
                       ></textarea>
                     </fieldset>
                   </div>
-                  <div class="col-md-12">
+                  <div class="col-md-12 text-center">
                     <fieldset>
                       <button type="submit" id="form-submit" class="btn">
                         Send Now
@@ -652,12 +733,19 @@
     </script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-
     <script src="js/datepicker.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
     <script type="text/javascript">
+      // Fallback function if any external script expects this
+      window.solveSimpleChallenge =
+        window.solveSimpleChallenge ||
+        function () {
+          console.log("solveSimpleChallenge was called but is not defined");
+          return true;
+        };
+
       $(document).ready(function () {
         // navigation click actions
         $(".scroll-link").on("click", function (event) {
@@ -670,6 +758,21 @@
         $(".nav-link").on("click", function (event) {
           $(".nav-link").removeClass("active");
           $(this).addClass("active");
+        });
+
+        // Contact form submission handler - Removed AJAX to fix CORS issues
+        // Using regular form submission now
+        $("#contact").submit(function () {
+          // Show loading indicator on button
+          $("#form-submit").text("Sending...");
+          // Disabling the button temporarily to prevent multiple submissions
+          $("#form-submit").prop("disabled", true);
+
+          // Form will be submitted automatically without AJAX
+          // Web3Forms will handle the redirect
+
+          // No need to prevent default - let the form submit normally
+          return true;
         });
 
         // Initially set active state based on hash or default to first menu item

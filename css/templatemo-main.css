@@ -189,10 +189,6 @@ nav ul li a {
   font-size: 18px;
 }
 
-nav .mini-logo {
-  display: none; /* Always hide the mini-logo */
-}
-
 /* New header logo styles */
 .header-logo {
   position: fixed;
@@ -1043,11 +1039,6 @@ svg:not([fill="currentColor"]) {
 
   nav .logo {
     display: none;
-  }
-
-  nav .mini-logo {
-    margin-top: 50px;
-    display: block;
   }
 
   nav ul {

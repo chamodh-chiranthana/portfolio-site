@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Portfolio - Chamodh</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png" /> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/fontAwesome.css" />
+    <link rel="stylesheet" href="css/light-box.css" />
+    <link rel="stylesheet" href="css/templatemo-main.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <style>
+      .right-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding-top: 42px; /* Match the height of the "Tech Skills" heading */
+      }
+
+      .right-content p {
+        margin-top: 0;
+        margin-bottom: 15px;
+        max-width: 80%;
+        text-align: left; /* Change from center to left */
+      }
+
+      .card {
+        background-color: transparent;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: all 0.5s;
+        cursor: pointer;
+      }
+      .card-body {
+        color: #fff;
+      }
+      .card-body i {
+        font-size: 50px;
+        margin-bottom: 10px;
+      }
+      .card-title {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+      .card:hover {
+        background-color: #fff;
+      }
+      .card:hover .card-body {
+        color: #232323;
+      }
+
+      /* Additional responsive styles */
+      @media (max-width: 768px) {
+        .right-content {
+          padding-top: 30px;
+        }
+
+        .right-content p {
+          max-width: 100%;
+        }
+
+        .first-content .col-md-9,
+        .first-content .col-md-3 {
+          padding: 0 15px;
+        }
+
+        .d-flex {
+          display: block !important;
+          margin-bottom: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="sequence">
+      <div class="seq-preloader">
+        <svg
+          width="39"
+          height="16"
+          viewBox="0 0 39 16"
+          xmlns="http://www.w3.org/2000/svg"
+          class="seq-preload-indicator"
+        >
+          <g fill="#F96D38">
+            <path
+              class="seq-preload-circle seq-preload-circle-1"
+              d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z"
+            />
+            <path
+              class="seq-preload-circle seq-preload-circle-2"
+              d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z"
+            />
+            <path
+              class="seq-preload-circle seq-preload-circle-3"
+              d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Add header logo -->
+    <div class="header-logo">
+      <img src="img/logo.png" alt="Logo" />
+    </div>
+
+    <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <!-- Remove mini-logo div -->
+      <ul>
+        <li>
+          <a href="#1" class="nav-link"
+            ><i class="fa fa-home"></i> <em>Home</em></a
+          >
+        </li>
+        <li>
+          <a href="#2" class="nav-link"
+            ><i class="fa fa-user"></i> <em>About</em></a
+          >
+        </li>
+        <li>
+          <a href="#3" class="nav-link"
+            ><i class="fa fa-pencil"></i> <em>Skills</em></a
+          >
+        </li>
+        <li>
+          <a href="#4" class="nav-link"
+            ><i class="fa fa-image"></i> <em>Projects</em></a
+          >
+        </li>
+        <li>
+          <a href="#5" class="nav-link"
+            ><i class="fa fa-envelope"></i> <em>Contact</em></a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="slides">
+      <div class="slide" id="1">
+        <div class="content first-content">
+          <div class="container-fluid">
+            <div class="col-md-3">
+              <div class="author-image">
+                <img src="img/author_image.png" alt="Author Image" />
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h2>Step inside my digital showcase!</h2>
+              <p style="font-size: 15px">
+                Enjoy exploring my portfolio. It's like a mini-museum of my
+                work, except you don't have to be quiet and you can click on
+                everything.
+                <strong>Dive in,</strong>
+                and see what catches your eye. I've tried to make it fun, and
+                built it as a single-page app for faster navigation, so
+                hopefully you'll leave with
+                <em>a smile</em> (and maybe a new <em>appreciation</em> for my
+                skills).
+              </p>
+              <div class="social-buttons">
+                <div class="main-btn">
+                  <a href="#2" style="font-size: 15px">Read More</a>
+                </div>
+                <div
+                  class="fb-btn"
+                  style="display: inline-block; margin-right: 10px"
+                >
+                  <a
+                    rel="nofollow"
+                    href="https://github.com/chamodh-chiranthana"
+                    style="font-size: 15px"
+                    >GitHub</a
+                  >
+                </div>
+                <div class="fb-btn" style="display: inline-block">
+                  <a
+                    rel="nofollow"
+                    href="https://www.linkedin.com/in/chamochiran/"
+                    style="font-size: 15px"
+                    >LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="2">
+        <div class="content second-content">
+          <div class="container-fluid">
+            <div class="col-md-6">
+              <div class="left-content">
+                <h2>About Me</h2>
+                <p>
+                  So, I'm a Computer Science undergrad. I basically spend my
+                  days wrangling code (and occasionally wrestling with
+                  semicolons). I've built a bunch of cool projects, and let's
+                  just say my debugging skills are on point – I turn those pesky
+                  errors into exciting challenges.
+                </p>
+
+                <p>
+                  I'm all about finding creative solutions and diving headfirst
+                  into new problems. I'm particularly interested in Data
+                  Science, Web Development and UI/UX Designing.
+                </p>
+
+                <p>
+                  If you're looking for someone who's passionate about
+                  technology, loves a good coding challenge, and isn't afraid to
+                  have a little fun along the way, then let's connect!
+                </p>
+                <div class="main-btn"><a href="#3">Know More</a></div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="right-image">
+                <img src="img/about_image.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="3">
+        <div class="content third-content">
+          <div class="container-fluid">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="first-section">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="left-content">
+                          <h2>Tech skills</h2>
+                          <div class="row">
+                            <!-- Languages -->
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-javascript-plain"></i>
+                                  <h4 class="card-title">JavaScript</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-java-plain"></i>
+                                  <h4 class="card-title">Java</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-git-plain"></i>
+                                  <h4 class="card-title">Git</h4>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Frameworks & Libraries -->
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-react-original"></i>
+                                  <h4 class="card-title">React Native</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-angularjs-plain"></i>
+                                  <h4 class="card-title">Angular</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-nodejs-plain"></i>
+                                  <h4 class="card-title">Node.js</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-nextjs-line"></i>
+                                  <h4 class="card-title">Next.js</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-express-original"></i>
+                                  <h4 class="card-title">Express.js</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-spring-original"></i>
+                                  <h4 class="card-title">Spring Boot</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-tailwindcss-plain"></i>
+                                  <h4 class="card-title">Tailwind CSS</h4>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Databases -->
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-mongodb-plain"></i>
+                                  <h4 class="card-title">MongoDB</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-mysql-original"></i>
+                                  <h4 class="card-title">MySQL</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="right-content">
+                          <div class="right-content" style="margin-top: 0">
+                            <p style="font-size: 15px">
+                              Consider this my digital playground – a collection
+                              of skills I've enthusiastically acquired through
+                              hands-on projects and coding courses.
+                            </p>
+                            <p style="font-size: 15px">
+                              You'll find a mix of front-end fun with JavaScript
+                              and React Native, balanced by back-end powerhouses
+                              like Node.js, Express.js, and Spring Boot.
+                            </p>
+                            <p style="font-size: 15px">
+                              And, because data is king (or queen!), I'm
+                              comfortable wrangling MongoDB and MySQL.
+                              Naturally, Git keeps everything organized, because
+                              even digital playgrounds need rules.
+                            </p>
+                            <p style="font-size: 15px">
+                              Essentially, I'm ready to bring a blend of
+                              technical know-how and a can-do attitude to any
+                              project.
+                            </p>
+                          </div>
+                          <br />
+                          <br />
+                          <br />
+                          <!-- Design and Collaboration Section -->
+                          <h2>Design and Collaboration</h2>
+                          <div
+                            class="row"
+                            style="
+                              width: 100%;
+                              display: flex;
+                              justify-content: center;
+                            "
+                          >
+                            <div
+                              class="col-md-4 col-sm-6"
+                              style="float: none; display: inline-block"
+                            >
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-jira-plain"></i>
+                                  <h4 class="card-title">Jira</h4>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="col-md-4 col-sm-6"
+                              style="float: none; display: inline-block"
+                            >
+                              <div class="card">
+                                <div class="card-body">
+                                  <i class="devicon-figma-plain"></i>
+                                  <h4 class="card-title">Figma</h4>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="second-section">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="left-image">
+                          <img
+                            src="img/second_service.jpg"
+                            alt="second service"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="right-content">
+                          <h2 style="text-align: left">You're almost there,</h2>
+                          <p style="font-size: 15px">
+                            Just a few lines of code away from seeing the
+                            projects that define my journey. Like those
+                            perfectly optimized algorithms that make a web app
+                            sing, there's more to discover about the technical
+                            challenges I've tackled. Don't stop reading now,
+                            keep on reading to see the stack of projects I've
+                            poured my time into.
+                          </p>
+                          <div class="main-btn">
+                            <a href="#4">Continue Reading</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="4">
+        <div class="content fourth-content">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="section-title">
+                  These are the Projects I've worked on so far
+                </h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-effect">
+                      <div class="hover-content">
+                        <h2>Infratrack</h2>
+                        <p style="font-size: 15px">
+                          A solution for citizens to easily report and track
+                          road infrastructure issues.
+                        </p>
+                        <div class="project-buttons">
+                          <a href="#" class="project-button">Live Demo</a>
+                          <a
+                            href="https://github.com/project-infratrack"
+                            class="project-button"
+                            >Repository</a
+                          >
+                          <a
+                            href="https://infratrack.it.com"
+                            class="project-button"
+                            >Landing Page</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="img/infratrack_thumb.jpg" />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">Infratrack</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-effect">
+                      <div class="hover-content">
+                        <h2>FlashCardi</h2>
+                        <p style="font-size: 15px">
+                          A flash card study assistance application.
+                        </p>
+                        <div class="project-buttons">
+                          <a href="#" class="project-button">Live Demo</a>
+                          <a
+                            href="https://github.com/chamodh-chiranthana/flash-cardi"
+                            class="project-button"
+                            >Repository</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="img/flashcardi_thumb.jpg" />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">FlashCardi</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-effect">
+                      <div class="hover-content">
+                        <h2>ChitChat</h2>
+                        <p style="font-size: 15px">
+                          Interactive chat application creation.
+                        </p>
+                        <div class="project-buttons">
+                          <a href="#" class="project-button">Live Demo</a>
+                          <a href="#" class="project-button">Repository</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="image">
+                      <img src="img/chitchat_thumb.jpg" />
+                    </div>
+                  </div>
+                  <div class="project-info">
+                    <h3 class="project-title">ChitChat</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide" id="5">
+        <div class="content fifth-content">
+          <div class="container-fluid">
+            <div class="col-md-12">
+              <h2 class="section-title">Get In Touch</h2>
+              <form id="contact" action="" method="post">
+                <div class="row">
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input
+                        name="name"
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Your name..."
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-6">
+                    <fieldset>
+                      <input
+                        name="email"
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Your email..."
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <input
+                        name="subject"
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject..."
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <textarea
+                        name="message"
+                        rows="6"
+                        class="form-control"
+                        id="message"
+                        placeholder="Your message..."
+                        required=""
+                      ></textarea>
+                    </fieldset>
+                  </div>
+                  <div class="col-md-12">
+                    <fieldset>
+                      <button type="submit" id="form-submit" class="btn">
+                        Send Now
+                      </button>
+                    </fieldset>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="content">
+        <p>Copyright &copy; 2025 Chamodh Chiranthana</p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        // navigation click actions
+        $(".scroll-link").on("click", function (event) {
+          event.preventDefault();
+          var sectionID = $(this).attr("data-id");
+          scrollToID("#" + sectionID, 750);
+        });
+
+        // Set active class on navigation based on current section
+        $(".nav-link").on("click", function (event) {
+          $(".nav-link").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        // Initially set active state based on hash or default to first menu item
+        function setInitialActive() {
+          var hash = window.location.hash;
+          if (hash) {
+            $(".nav-link").removeClass("active");
+            $('a[href="' + hash + '"]').addClass("active");
+          } else {
+            $(".nav-link:first").addClass("active");
+          }
+        }
+
+        // Set initial active state
+        setInitialActive();
+
+        // scroll to top action
+        $(".scroll-top").on("click", function (event) {
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+        // mobile nav toggle
+        $("#nav-toggle").on("click", function (event) {
+          event.preventDefault();
+          $("#main-nav").toggleClass("open");
+        });
+      });
+      // scroll function
+      function scrollToID(id, speed) {
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $("#main-nav");
+        $("html,body").animate({ scrollTop: targetOffset }, speed);
+        if (mainNav.hasClass("open")) {
+          mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+          mainNav.removeClass("open");
+        }
+      }
+      if (typeof console === "undefined") {
+        console = {
+          log: function () {},
+        };
+      }
+    </script>
+  </body>
+</html>
